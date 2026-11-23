@@ -4,3 +4,11 @@ sqlalchemy
 psycopg[binary]
 pydantic-settings
 python-dotenv
+langchain-core 
+langchain-community 
+pymupdf
+langchain-text-splitters
+transformers>=4.51.0
+sentence-transformers>=2.7.0
+langchain-postgres
+psycopg[binary]   
