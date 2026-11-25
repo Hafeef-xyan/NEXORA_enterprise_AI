@@ -1,0 +1,53 @@
+
+[
+  {
+    "id": "RAG-001",
+    "query": "How many days of earned leave does a NEXORA employee receive?",
+    "expected_sources": ["Leave_Policy.pdf"]
+  },
+  {
+    "id": "RAG-002",
+    "query": "What are the standard office working hours at NEXORA?",
+    "expected_sources": ["Working_Hours_Policy.pdf"]
+  },
+  {
+    "id": "RAG-003",
+    "query": "What is the notice period for a confirmed employee who resigns?",
+    "expected_sources": ["Resignation_Exit_Policy.pdf"]
+  },
+  {
+    "id": "RAG-004",
+    "query": "How should NEXORA employees record their attendance?",
+    "expected_sources": ["Attendance_Policy.pdf"]
+  },
+  {
+    "id": "RAG-005",
+    "query": "What are the responsibilities of employees regarding teamwork and communication?",
+    "expected_sources": ["Employee_Responsibilities.pdf"]
+  },
+  {
+    "id": "RAG-006",
+    "query": "Where can I find NEXORA's salary and benefits information?",
+    "expected_sources": ["Salary_Benefits_Policy.pdf"]
+  },
+  {
+    "id": "RAG-007",
+    "query": "Where can I find the company's onboarding procedures?",
+    "expected_sources": ["Onboarding_Policy.pdf"]
+  },
+  {
+    "id": "RAG-008",
+    "query": "Which document explains workplace behaviour expectations?",
+    "expected_sources": ["Workplace_Behaviour_Policy.pdf"]
+  },
+  {
+    "id": "RAG-009",
+    "query": "Where are NEXORA's code of conduct guidelines documented?",
+    "expected_sources": ["Code_of_Conduct.pdf"]
+  },
+  {
+    "id": "RAG-010",
+    "query": "Which policy explains employee leave and absence arrangements?",
+    "expected_sources": ["Leave_Policy.pdf"]
+  }
+]
