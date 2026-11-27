@@ -12,6 +12,11 @@ from langchain_postgres import PGEngine, PGVectorStore
 from app.core.config import settings
 from app.rag.embeddings import get_embedding_model
 
+from langchain_postgres.v2.hybrid_search_config import (
+    HybridSearchConfig,
+    reciprocal_rank_fusion,
+)
+
 
 TABLE_NAME = "nexora_document_chunks"
 VECTOR_SIZE = 1024
@@ -31,18 +36,22 @@ def get_pg_engine() -> PGEngine:
 
 @lru_cache(maxsize=1)
 def get_vector_store() -> PGVectorStore:
-    """
-    Initialize and return the NEXORA vector store.
-    """
-
     engine = get_pg_engine()
-
     embedding_model = get_embedding_model()
+
+    hybrid_config = HybridSearchConfig(
+        tsv_column="content_tsv",
+        tsv_lang="pg_catalog.english",
+        fusion_function=reciprocal_rank_fusion,
+        primary_top_k=10,
+        secondary_top_k=10,
+    )
 
     return PGVectorStore.create_sync(
         engine=engine,
         embedding_service=embedding_model,
-        table_name=TABLE_NAME
+        table_name=TABLE_NAME,
+        hybrid_search_config=hybrid_config,
     )
 
 

@@ -1,53 +1,124 @@
-
 [
   {
     "id": "RAG-001",
-    "query": "How many days of earned leave does a NEXORA employee receive?",
-    "expected_sources": ["Leave_Policy.pdf"]
+    "query": "How many earned or annual leave days does an eligible employee receive each year?",
+    "expected_sources": [
+      "Leave_Policy.pdf"
+    ]
   },
   {
     "id": "RAG-002",
-    "query": "What are the standard office working hours at NEXORA?",
-    "expected_sources": ["Working_Hours_Policy.pdf"]
+    "query": "How should an employee request casual leave, and how much notice should they give?",
+    "expected_sources": [
+      "Leave_Policy.pdf"
+    ]
   },
   {
     "id": "RAG-003",
-    "query": "What is the notice period for a confirmed employee who resigns?",
-    "expected_sources": ["Resignation_Exit_Policy.pdf"]
+    "query": "When may HR request a medical certificate for sick leave?",
+    "expected_sources": [
+      "Leave_Policy.pdf"
+    ]
   },
   {
     "id": "RAG-004",
-    "query": "How should NEXORA employees record their attendance?",
-    "expected_sources": ["Attendance_Policy.pdf"]
+    "query": "How should employees record attendance and report an absence or delay?",
+    "expected_sources": [
+      "Attendance_Policy.pdf",
+      "Employee_Responsibilities.pdf"
+    ]
   },
   {
     "id": "RAG-005",
-    "query": "What are the responsibilities of employees regarding teamwork and communication?",
-    "expected_sources": ["Employee_Responsibilities.pdf"]
+    "query": "How can an employee correct an attendance record error?",
+    "expected_sources": [
+      "Attendance_Policy.pdf"
+    ]
   },
   {
     "id": "RAG-006",
-    "query": "Where can I find NEXORA's salary and benefits information?",
-    "expected_sources": ["Salary_Benefits_Policy.pdf"]
+    "query": "What are the standard working hours or shift arrangements for employees?",
+    "expected_sources": [
+      "Working_Hours_Policy.pdf"
+    ]
   },
   {
     "id": "RAG-007",
-    "query": "Where can I find the company's onboarding procedures?",
-    "expected_sources": ["Onboarding_Policy.pdf"]
+    "query": "What notice period and steps apply when an employee resigns?",
+    "expected_sources": [
+      "Resignation_Exit_Policy.pdf"
+    ]
   },
   {
     "id": "RAG-008",
-    "query": "Which document explains workplace behaviour expectations?",
-    "expected_sources": ["Workplace_Behaviour_Policy.pdf"]
+    "query": "What company property must an employee return during the exit process?",
+    "expected_sources": [
+      "Resignation_Exit_Policy.pdf"
+    ]
   },
   {
     "id": "RAG-009",
-    "query": "Where are NEXORA's code of conduct guidelines documented?",
-    "expected_sources": ["Code_of_Conduct.pdf"]
+    "query": "How is monthly payroll processed, and what are the main steps before salary is paid?",
+    "expected_sources": [
+      "Salary_Benefits_Policy.pdf"
+    ]
   },
   {
     "id": "RAG-010",
-    "query": "Which policy explains employee leave and absence arrangements?",
-    "expected_sources": ["Leave_Policy.pdf"]
+    "query": "What responsibilities do employees have for respectful communication and teamwork?",
+    "expected_sources": [
+      "Employee_Responsibilities.pdf",
+      "Code_of_Conduct.pdf"
+    ]
+  },
+  {
+    "id": "RAG-011",
+    "query": "What should employees do to protect company devices, documents, stock, and access credentials?",
+    "expected_sources": [
+      "Employee_Responsibilities.pdf",
+      "Code_of_Conduct.pdf"
+    ]
+  },
+  {
+    "id": "RAG-012",
+    "query": "What approvals are required for an employee to work remotely?",
+    "expected_sources": [
+      "Remote_Work_Policy.pdf"
+    ]
+  },
+  {
+    "id": "RAG-013",
+    "query": "What steps should staff follow when transferring stock between warehouses?",
+    "expected_sources": [
+      "Stock_Transfer_SOP.pdf"
+    ]
+  },
+  {
+    "id": "RAG-014",
+    "query": "What should inventory staff check before initiating replenishment or a reorder?",
+    "expected_sources": [
+      "Reorder_Procedures_SOP.pdf"
+    ]
+  },
+  {
+    "id": "RAG-015",
+    "query": "How should a stock audit be conducted and discrepancies recorded?",
+    "expected_sources": [
+      "Stock_Audit_SOP.pdf"
+    ]
+  },
+  {
+    "id": "RAG-016",
+    "query": "How should damaged goods be identified, documented, and handled?",
+    "expected_sources": [
+      "Damaged_Goods_SOP.pdf"
+    ]
+  },
+  {
+    "id": "RAG-017",
+    "query": "What are the documented steps for processing a customer order?",
+    "expected_sources": [
+      "Order_Processing_SOP.pdf"
+    ]
   }
 ]
