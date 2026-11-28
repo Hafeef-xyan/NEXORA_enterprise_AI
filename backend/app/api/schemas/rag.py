@@ -11,14 +11,9 @@ class RAGQueryRequest(BaseModel):
     )
 
 
-class RAGSource(BaseModel):
-    source: str | None = None
-    page: int | None = None
-    category: str | None = None
-
 
 class RAGQueryResponse(BaseModel):
     query: str
-    context: str
+    answer: str
     retrieved_count: int
-    sources: list[RAGSource]
+    sources: list[dict]
